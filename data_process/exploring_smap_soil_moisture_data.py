@@ -8,10 +8,10 @@ sm = ds["soil_moisture_pm"].values.astype(float)
 lat = ds["latitude_pm"].values.astype(float)
 lon = ds["longitude_pm"].values.astype(float)
 
-# Visualização de variáveis' nomes
+# Visualization of Variable Names
 print(ds.variables)
 
-# Gera CSV com os dados extraídos para análise exploratória, limpeza e retorno de insights
+# Generate a CSV with the extracted data for exploratory analysis, cleaning, and insight generation
 data = {
     "Longitude": lon.flatten(),
     "Latitude": lat.flatten(),
